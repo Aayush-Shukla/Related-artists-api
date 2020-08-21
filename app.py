@@ -143,7 +143,7 @@ def findPath(startingNode,endingNode,searchResult):
 
 
 @app.route('/<artist1>/<artist2>', methods=['GET'])
-def index(artist1,artist2):
+def api(artist1,artist2):
 
     print(artist1,artist2)
     id1,id2=getID(artist1,artist2)
@@ -156,6 +156,12 @@ def index(artist1,artist2):
 
 
     return Response(jsonSring,  mimetype='application/json')
+
+@app.route('/', methods=['GET'])
+def index():
+
+
+    return 'Api use: /firstartist/secondartist. <br><br> <a href="/eminem/writer"> EXAMPLE </a>'
 
 
 if __name__ == '__main__':
