@@ -1,3 +1,3 @@
-#api use
+# api use
 
-/<firstArtist>/<secondArtist>
+/firstArtist/secondArtist
