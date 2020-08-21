@@ -1,0 +1,3 @@
+#api use
+
+/<firstArtist>/<secondArtist>
